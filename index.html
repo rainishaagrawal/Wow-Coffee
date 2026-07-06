@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WOW Coffee</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="video-splash">
+    <video id="intro-video" autoplay muted playsinline>
+      <source src="video1.mp4" type="video/mp4">
+    </video>
+    <button id="skip-btn">
+      <span class="material-symbols-outlined">arrow_forward</span>
+      Skip Intro
+    </button>
+  </div>
+
+  <div id="scroll-buffer"></div>
+
+  <div id="smooth-scroll-wrapper">
+
+    <section class="main1" id="home">
+      <img src="Background 5.jpg" alt="Background Image" class="background-image">
+
+      <nav class="nav">
+        <div class="logo fade-item">
+          <img src="New folder/coffee_logo-removebg-preview.png" alt="Coffee Logo" class="logo-glow">
+        </div>
+
+        <div class="nav-options fade-item delay-1">
+          <span class="nav-link" data-target="home">Home</span>
+          <span class="nav-link" data-target="menu">Menu</span>
+          <span class="nav-link" data-target="about">About</span>
+          <span class="nav-link" data-target="contact">Contact</span>
+        </div>
+
+        <div class="button-section fade-item delay-2">
+          <button class="cart-icon" onclick="alert('Cart feature coming soon!')">
+            <span class="material-symbols-outlined">shopping_cart</span>
+            Cart
+          </button>
+          <button class="Account" onclick="alert('Account login coming soon!')">
+            <span class="material-symbols-outlined">person</span>
+            Account
+          </button>
+        </div>
+      </nav>
+
+      <div class="main-text">
+        <h1 class="fade-item">WOW Coffee</h1>
+        <h2 class="fade-item delay-1">Taste the Difference <br> in Every Sip</h2>
+        <h3 class="fade-item delay-2">
+          Experience handcrafted coffee made from the world's finest beans.<br>
+          Freshly brewed every day to bring warmth, flavor,<br>
+          and happiness to every cup.
+        </h3>
+        
+        <div class="infobuttons fade-item delay-3">
+          <button class="order-now-btn" data-target="menu">Order Now</button>
+          <button class="learn-more-btn" data-target="about">Learn More</button>
+        </div>
+      </div>
+
+      <div class="object fade-item delay-2">
+        <img src="New folder/coffee_glass5-removebg-preview.png" alt="Coffee" class="coffee">
+      </div>
+    </section>
+
+    <section class="achievement">
+      <div class="experience fade-item">
+        <div class="icon1"><span class="material-symbols-outlined">coffee</span></div>
+        <div class="text1">
+          <h1>15+</h1>
+          <h2>Years of Experience</h2>
+        </div>
+      </div>
+      
+      <div class="customer fade-item delay-1">
+        <div class="icon2"><span class="material-symbols-outlined">people</span></div>
+        <div class="text2">
+          <h1>100k+</h1>
+          <h2>Happy Customers</h2>
+        </div>
+      </div>
+      
+      <div class="flavors fade-item delay-2">
+        <div class="icon3"><span class="material-symbols-outlined">local_cafe</span></div>
+        <div class="text3">
+          <h1>25+</h1>
+          <h2>Outlets</h2>
+        </div>
+      </div>
+      
+      <div class="rating fade-item delay-3">
+        <div class="icon4"><span class="material-symbols-outlined">star</span></div>
+        <div class="text4">
+          <h1>4.9/5</h1>
+          <h2>Customer Rating</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="main2" id="menu">
+      <h1 class="fade-item">Our Menu</h1>
+      
+      <div class="menu-slider-container">
+        <button class="slider-arrow prev-btn">
+          <span class="material-symbols-outlined">arrow_back_ios</span>
+        </button>
+
+        <div class="cards">
+          <div class="menu-card fade-item">
+            <div class="card-image">
+              <img src="New folder/Americano2-removebg-preview.png" alt="Americano">
+            </div>
+            <div class="card-content">
+              <h3>Americano</h3>
+              <h5>A bold and smooth coffee made by diluting rich espresso with hot water for a balanced flavor.</h5>
+            </div>
+          </div>
+
+          <div class="menu-card fade-item delay-1">
+            <div class="card-image">
+              <img src="New folder/Cappuccino2-removebg-preview.png" alt="Cappuccino">
+            </div>
+            <div class="card-content">
+              <h3>Cappuccino</h3>
+              <h5>A classic Italian coffee with a rich espresso base, steamed milk, and a thick layer of velvety foam.</h5>
+            </div>
+          </div>
+
+          <div class="menu-card fade-item delay-2">
+            <div class="card-image">
+              <img src="New folder/Espresso2-removebg-preview.png" alt="Espresso">
+            </div>
+            <div class="card-content">
+              <h3>Espresso</h3>
+              <h5>A strong, concentrated shot of coffee with a rich aroma and a smooth crema.</h5>
+            </div>
+          </div>
+
+          <div class="menu-card fade-item delay-3">
+            <div class="card-image">
+              <img src="New folder/Latte1-removebg-preview.png" alt="Latte">
+            </div>
+            <div class="card-content">
+              <h3>Latte</h3>
+              <h5>A creamy and smooth coffee combining espresso with steamed milk and a light milk foam.</h5>
+            </div>
+          </div>
+
+          <div class="menu-card fade-item">
+            <div class="card-image">
+              <img src="New folder/Iced_Caramel_Latte1-removebg-preview.png" alt="Iced Caramel">
+            </div>
+            <div class="card-content">
+              <h3>Iced Caramel</h3>
+              <h5>A refreshing iced latte blended with sweet caramel for a smooth and indulgent taste.</h5>
+            </div>
+          </div>
+
+          <div class="menu-card fade-item">
+            <div class="card-image">
+              <img src="New folder/Iced_Mocha1-removebg-preview.png" alt="Mocha Latte">
+            </div>
+            <div class="card-content">
+              <h3>Mocha Latte</h3>
+              <h5>A delicious blend of espresso, chocolate, and steamed milk topped with creamy foam.</h5>  
+            </div>
+          </div>
+
+          <div class="menu-card fade-item">
+            <div class="card-image">
+              <img src="New folder/Iced_Americano2-removebg-preview.png" alt="Iced Americano">
+            </div>
+            <div class="card-content">
+              <h3>Iced Americano</h3>
+              <h5>A refreshing combination of espresso, chilled water, and ice for a bold yet smooth coffee experience.</h5>  
+            </div>
+          </div>
+
+          <div class="menu-card fade-item">
+            <div class="card-image">
+              <img src="New folder/Irish_Cream_Cold_Brew2-removebg-preview.png" alt="Irish Cream Cold Brew">
+            </div>
+            <div class="card-content">
+              <h3>Irish Cream Cold Brew</h3>
+              <h5>Slow-steeped cold brew infused with smooth Irish cream flavor for a rich and refreshing finish.</h5>  
+            </div>
+          </div>
+
+          <div class="menu-card fade-item">
+            <div class="card-image">
+              <img src="New folder/Java_Chip_Frappuccino3-removebg-preview.png" alt="Java Chip Frappuccino">
+            </div>
+            <div class="card-content">
+              <h3>Java Chip Frappuccino</h3>
+              <h5>A rich blended coffee drink with chocolate chips, milk, ice, and whipped cream.</h5>  
+            </div>
+          </div>
+
+          <div class="menu-card fade-item">
+            <div class="card-image">
+              <img src="New folder/Mint_Mocha1-removebg-preview.png" alt="Mint Mocha">
+            </div>
+            <div class="card-content">
+              <h3>Mint Mocha</h3>
+              <h5>A refreshing mix of rich chocolate and cool mint blended with espresso and creamy milk.</h5>  
+            </div>
+          </div>
+
+          <div class="menu-card fade-item">
+            <div class="card-image">
+              <img src="New folder/Oreo_Coffee_Shake1-removebg-preview.png" alt="Seasonal Special">
+            </div>
+            <div class="card-content">
+              <h3>Seasonal Special</h3>
+              <h5>A creamy cold coffee blended with Oreo cookies for a rich, chocolaty, and crunchy delight.</h5>  
+            </div>
+          </div>
+        </div>
+
+        <button class="slider-arrow next-btn">
+          <span class="material-symbols-outlined">arrow_forward_ios</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="main3" id="about">
+      <div class="about-container">
+        <div class="about-image fade-item">
+          <img src="New folder/coffee_cup1-removebg-preview.png" alt="WOW Coffee Cup" class="coffeeimg">
+        </div>
+        
+        <div class="info">
+          <h2 class="fade-item">About Us</h2>
+          <div class="accent-line fade-item"></div>
+          <h3 class="fade-item delay-1">Brewing Happiness, One Cup at a Time.</h3>
+          
+          <p class="fade-item delay-2">At WOW Coffee, we believe every cup tells a story. From carefully selected premium coffee beans to expertly crafted beverages, we're passionate about delivering rich flavors, unforgettable aromas, and moments worth savoring.</p>
+          
+          <p class="fade-item delay-3">Whether you're starting your morning with a bold espresso, enjoying a creamy latte, or relaxing with a refreshing cold brew, every drink is prepared with quality ingredients and genuine care. Our cozy atmosphere and friendly service make WOW Coffee the perfect place to work, meet friends, or simply enjoy your favorite cup.</p>
+          
+          <div class="about-tagline fade-item delay-3">Freshly brewed. Expertly crafted. Made for coffee lovers.</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main4" id="contact">
+      <div class="footer-container">
+        
+        <div class="footer-column brand-col fade-item">
+          <div class="footer-logo">
+            <img src="New folder/coffee_logo-removebg-preview.png" alt="WOW Coffee Logo">
+          </div>
+          <p>Handcrafting the perfect coffee experience every day. Visit us or order online for your daily dose of happiness.</p>
+        </div>
+
+        <div class="footer-column links-col fade-item delay-1">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><span class="footer-link" data-target="home">Home</span></li>
+            <li><span class="footer-link" data-target="menu">Menu</span></li>
+            <li><span class="footer-link" data-target="about">About Us</span></li>
+            <li><span class="footer-link" data-target="contact">Contact</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-column contact-col fade-item delay-2">
+          <h3>Send Us a Message</h3>
+          <form id="contactForm" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent successfully.'); this.reset();">
+            <input type="text" placeholder="Your Name" required class="form-input">
+            <input type="email" placeholder="Your Email" required class="form-input">
+            <textarea placeholder="Your Message" rows="3" required class="form-input"></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <hr>
+        <p>&copy; 2026 WOW Coffee. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
